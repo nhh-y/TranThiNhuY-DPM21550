@@ -1,0 +1,20 @@
+<!-- question_list.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>📋 Danh sách câu hỏi</title>
+</head>
+<body>
+    <h1>📋 Danh sách câu hỏi</h1>
+    {% if questions %}
+        <ul>
+            {% for question in questions %}
+                <li>{{ question.text }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Không có câu hỏi nào trong hệ thống.</p>
+    {% endif %}
+</body>
+</html>
